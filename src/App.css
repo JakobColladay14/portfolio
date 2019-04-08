@@ -1,0 +1,191 @@
+/* Ctr = container */
+.Ctr {
+  align-content: center;
+}
+/* Navbar */
+.navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  height: 100px; 
+}
+.navBar-Proj {
+  margin-top: 20px;
+  margin-left: 20px; 
+  display: block;
+  padding: 14px 16px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  float: left;
+  border-radius: 15px 
+}
+.navBar-Contact {
+  margin-top: 20px;
+  margin-right: 20px; 
+  display: block;
+  padding: 14px 16px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  border-radius: 15px 
+}
+
+/* Header */
+.header {
+  padding: 220px;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 30px
+}
+.headerCard {
+  border-style: solid;
+  border: 1;
+  border-color: white;
+  width: 55%;
+  height: 500px;
+  margin-top: -100px
+}
+
+/* BODY */
+/* put css into the body */
+.body {
+  font-family: "Arial; Helvetica; san-serif";
+  margin-top: 10px;
+}
+.bodyHeader {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: -25px
+}
+/* remove extra left and right margins; due to padding in columns */
+.appRow {
+  height: 425px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 15px;
+}
+/* floating three columns side by side */
+.appCtr {
+  float: left;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border-style: solid;
+  border: 1;
+  border-radius: 15%;
+  height: 350px;
+  width: 500px;
+  margin-top: 20px;
+
+}
+.appCard {
+  text-align: center;
+}
+.projBtn {
+  display: block;
+  border-radius: 15%;
+  height: 350px;
+  width: 500px
+}
+
+/* Footer */
+.contact {
+  margin-top: 25px;
+  height: 940px;
+  background-color: black;
+  color: white;
+}
+.contactCtr {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.portrait {
+  width: 600px;
+  height: 600px;
+  float: left;
+  margin-top: 50px;
+  margin-left: 150px; 
+  border-radius: 50%;
+  
+}
+.contactHeader {
+  width: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  margin-left:40% ;
+  font-size: 25px;
+  text-align: center
+}
+.contactText {
+  width: 800px;
+  height: 750px;
+  float: left;
+  margin-left: 155px;
+  border-style: solid;
+  border: 1;
+}
+.resume {
+   
+    border-bottom-style: solid
+}
+.resumeTitle {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 15px;
+  border-bottom-style: solid;
+  padding-bottom: 10px;
+}
+
+.workHist {
+  margin-bottom: -10px;
+  margin-left: 25px;
+}
+.workHistList {
+  margin-left: 25px;
+}
+.infoText {
+  margin-left: 25px;
+  margin-bottom: -10px;
+}
+.infoTitle {
+  margin-top: -1px;
+  margin-bottom: -15px;
+  text-align: center
+} 
+
+.skills {
+  border-bottom-style: solid;
+  padding-bottom: 25px;
+}
+.skillTitle {
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+.skillBody {
+  margin-left: 10px;
+}
+
+
+/* animation */
+.appScroll-enter {
+  opacity: 0.01;
+}
+.appScroll-enter.appScroll-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+.appScroll-leave {
+  opacity: 1;
+}
+.appScroll-leave.appScroll-leave-active {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in
+}

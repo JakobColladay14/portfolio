@@ -1,0 +1,111 @@
+
+.worldCurrency {
+float: left;
+margin-left: 50px;
+margin-top: 10px;
+border-style: solid;
+border-width: 1;
+height: 800px;
+width: 350px;
+text-align: center
+}
+.financeTrack {
+float: left;
+margin-left: 50px;
+margin-top: 10px;
+border-style: solid;
+border-width: 1;
+height: 800px;
+width: 1400px;
+text-align: center
+}
+.cryptoTrack {
+float: left;
+margin-left: 50px;
+margin-top: 10px;
+border-style: solid;
+border-width: 1;
+height: 800px;
+width: 350px;
+text-align: center;
+}
+
+.financeTitle {
+    border-bottom-style: solid
+}
+.columnNames {
+    border-bottom-style: solid;
+    height: 25px;
+}
+.column {
+    float: left;
+    margin-left: 70px;
+    margin-top: -7px;
+    
+}
+.columnName {
+    float: left;
+    margin-left: 25px;
+    margin-top: -7px; 
+}
+
+.MSFTtable {
+    margin-left: 50px;
+    margin-top: 10px;
+    border-style: solid;
+    width: 1300px;
+    text-align: center;
+    border-collapse: collapse
+}
+.MSFTheaderText {
+    float: left;
+    width: 125px;
+    margin-left: 10px;
+    border-bottom-style: solid;
+    border-bottom-left-radius: 25px;
+    border-color: grey
+}
+
+.MSFTbodyText {
+    float: left;
+    width: 135px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.MSFTtableTitle {
+    border-bottom-style: solid;
+    border-color: grey
+
+}
+
+/* Crypto */
+.cryptoTable {
+    width: 100%;
+    border-collapse: collapse
+    
+}
+.cryptoHeader {
+    border-style: solid;
+}
+.cryptoPrice {
+    margin-left: 40px;
+    margin-top: -15px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+.cryptoName {
+    margin-top: -15px;
+    margin-left: 35px;
+    border-bottom-style: solid;
+}
+.bodyName {
+    border-bottom-style: solid;
+}
+.bodyPrice {
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+.cryptoBody:nth-child(even) {
+    background-color:grey
+}
+

@@ -1,0 +1,139 @@
+/* Navbar */
+.navBar-toDo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+    height: 100px; 
+  }
+  .navBar-Proj-toDo {
+    margin-top: 20px;
+    margin-left: 20px; 
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    float: left;
+    border-radius: 15px 
+  }
+  .navBar-Contact-toDo {
+    margin-top: 20px;
+    margin-right: 20px; 
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    background-color:black;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    border-radius: 15px 
+  }
+.toDoCtr {
+    height: 750px;
+    width: 35%;
+    text-align: center;
+    margin-left: 32%;
+    background-color: #9dd7fb;
+    border-style: solid
+}
+
+.toDoTitle {
+    margin-top: -50px;
+    margin-bottom: -25px;
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #087cc4;
+}
+
+.toDoInput {
+    width: 500px;
+    height: 60px;
+    font-size: 35px;
+    background-color: #ceebfd;
+    text-align: center;
+    color: #087cc4;
+}
+.toDoBtn {
+    font-size: 25px;
+    padding: 15px;
+    margin-left: 10px;
+}
+.liItems {
+    border-style: solid;
+    border-width: 0.5px;
+    width: 503px;
+    height: 60px;
+    background-color: #ceebfd;
+}
+.liFilter-false {
+    visibility: hidden
+}
+.toDoText {
+    font-size: 35px;
+    width: 503px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 100px;     
+}
+.completed {
+    font-size: 35px;
+    width: 503px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 100px;
+    font-style: italic;
+    text-decoration: line-through;
+    text-decoration-style: solid;
+    opacity: .5;    
+}
+.ulList {
+    list-style-type: none;
+    margin-left: 6.5%;
+    text-align: left
+}
+
+/* Check Box */
+input[type=checkbox] {
+    visibility: hidden
+}
+.finishBtn {
+    width: 40px;
+    height: 40px;
+    background: #9dd7fb;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 50px;
+    position: relative;
+    float: left;
+}
+
+.finishBtn label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    left: 5px;
+    background: #23a5f6
+}
+
+.delBtn-Ctr {
+    z-index: 1;
+}
+.delBtn {
+    float: right;
+    margin-top: -85px;
+    margin-right: 15px;
+    font-size: 25px;
+    pointer-events: none;
+    z-index: 1;
+}
+.delBtn-false {
+    visibility: hidden
+}
