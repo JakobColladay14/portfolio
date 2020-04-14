@@ -120,21 +120,36 @@ export default class toDoPage extends React.Component {
             boolItem: false
         })
     }
+    delAllCompletedBtn = () => {
+        let stateItems = this.state.backItem
+        let items = stateItems.filter((items, idx) => {
+            return items.active
+        })
+        if(items.length === 0) {
+            return this.setState({
+                items,
+                backItem: items,
+                boolItem: false
+            })
+        } else {
+            return this.setState({
+                items,
+                backItem: items
+            })
+        }
+    }
 
     render() {
         const items = this.state.items.map((items, index) => {
             return(
                     <li className="liItems" key={index}>
-                        <form>
+                        <form className="formLiItems">
                             <div className="finishBtn" value={index}>
                                 <input type="checkbox" id={`finishBtn${index}`} value={index} onClick={this.listBtn}/>
                                 <label htmlFor={`finishBtn${index}`}></label>
                             </div>
                             <p className={items.active ? "toDoText" : 'completed'}>{items.term}</p> 
                         </form>
-                            <div className="delBtn-Ctr">
-                                <button className={ items.active ? "delBtn-false" : 'delBtn'} type='button' value={index} onClick={this.delBtn}>Del</button>
-                            </div>
                     </li>
             )
         })
@@ -156,7 +171,13 @@ export default class toDoPage extends React.Component {
                             <ul className="ulList">
                                 {items}
                                 <li>
-                                    <p className={this.state.boolItem ? "liFilter" : "liFilter-false"}><button type="button" onClick={this.allBtn} className="allBtn">All</button> <button type="button" onClick={this.activeBtn} className="activeBtn">Active</button> <button type="button" onClick={this.compBtn} className="compBtn">Completed</button> <button type="button" onClick={this.delAllBtn } className="delAllBtn">Delete All</button></p>
+                                    <p className={this.state.boolItem ? "liFilter" : "liFilter-false"}>
+                                        <button type="button" onClick={this.allBtn} className="allBtn">All</button> 
+                                        <button type="button" onClick={this.activeBtn} className="activeBtn">Active</button>
+                                        <button type="button" onClick={this.compBtn} className="compBtn">Completed</button> 
+                                        <button type="button" onClick={this.delAllBtn } className="delAllBtn">Delete All</button>
+                                        <button type="button" onClick={this.delAllCompletedBtn} className="delAllCompletedBtn">Delete All Completed</button>
+                                    </p>
                                 </li>
                             </ul>
 
